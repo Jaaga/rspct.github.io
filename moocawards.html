@@ -1,0 +1,176 @@
+<?php ?>
+<!Doctype html>
+<html>
+	<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		      function initialize() {
+		      	var myLatlng = new google.maps.LatLng(12.9656055,77.599917);
+		        var map_canvas = document.getElementById('map_canvas');
+		        var map_options = {
+		          center: new google.maps.LatLng(12.9656055,77.599917
+),
+		          zoom: 15,
+		          mapTypeId: google.maps.MapTypeId.ROADMAP
+		        }
+		        var map = new google.maps.Map(map_canvas, map_options);
+
+				var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+				var marker = new google.maps.Marker({
+				  position: myLatlng,
+				  map: map,
+				  title: "Jaaga Penthouse"
+				});
+		      }
+		      google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<script>
+	var c=document.getElementsByClass("schedule");
+	var ctx=c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(20,20);
+	ctx.lineTo(20,100);
+	ctx.lineTo(70,100);
+	ctx.stroke();
+	</script>
+	<style>
+	.wide {
+  width:100%;
+  margin-top:-22px;
+  height:450px;
+  background:url('http://2.bp.blogspot.com/-ay7j5bPAJ04/UwDcO1NCZ4I/AAAAAAAAA0o/zZLgMDrj1Hk/s1600/IMG_7548.JPG') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -moz-box-shadow: inset 20px 10px 50px #fff; 
+  -webkit-box-shadow: inset 20px 10px 50px #fff; 
+  box-shadow: inset 70px 80px 500px black; 
+
+ /* background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); 
+background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	}
+	.techrespect-nav{
+		background-color: #174c91;
+		border: 0px;
+	}
+	.techrespect-header{
+		font-size:2.8em;
+		/*color: #f05024; */
+		font-weight: bold;
+		color:white;
+		font-family: sans-serif;
+	}
+	.one-liner{
+		color:white;
+		padding-top:120px;
+		font-size:4.3em;
+		font-weight: bold;
+	}
+	.mooc-description{
+		color:white;
+		font-weight: bold;
+	}
+	.awards-section{
+		padding-bottom: 10px;
+		border-bottom: 3px solid #174c91;
+	}
+	.award-box{
+		padding: 0px 20px;
+	}
+	.award-box .thumbnail{
+		padding: 0px 10px;
+		border: 1px solid #f05024;
+	}
+	#map_canvas{
+		height: 300px;
+	}
+	.connector{
+
+	}
+	</style>
+	</head>
+	<body>
+		
+		
+
+		<!-- Image section with text on top-->
+		<div class="wide text-center" >
+			<h1 class="one-liner ">World's First MOOC Awards</h1>
+			<h3 class="mooc-description">Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </h3>
+		</div>
+
+		<div class="col-md-12 awards-section row-fluid">
+			<h1 class="col-md-1">Awards</h1><br>	
+			<div class="col-md-12">
+				<div class="col-md-4 text-center award-box">
+					<div class="thumbnail">
+						<h2>Mooc Awards</h2>
+						<p>Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+						Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+				</div>
+				<div class="col-md-4 text-center award-box"> 
+					<div class="thumbnail">
+						<h2>Code Challenges</h2>
+						<p>Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elitSome dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+				</div>
+				<div class="col-md-4 text-center award-box">
+					<div class="thumbnail">
+						<h2>Open source Projects</h2>
+						<p>Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="col-md-12 awards-section row-fluid">
+			<h1 class="col-md-1">s</h1><br>	
+			<div class="col-md-12">
+				<div class="col-md-4 text-center award-box">
+					<div class="thumbnail">
+						<h2>Mooc Awards</h2>
+						<p>Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+						Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+				</div>
+				<div class="col-md-4 text-center award-box"> 
+					<div class="thumbnail">
+						<h2>Code Challenges</h2>
+						<p>Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elitSome dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+				</div>
+				<div class="col-md-4 text-center award-box">
+					<div class="thumbnail">
+						<h2>Open source Projects</h2>
+						<p>Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit Some dummy text, but here goes the description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-offset-3 col-md-6 schedule">
+				<span class="glyphicon glyphicon-remove-circle"></span>
+				<span class="connector"></span>
+				<span class="glyphicon glyphicon-remove-circle"></span>
+				<span class="connector"></span>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8 col-md-offset-4" id="map_canvas">
+
+			</div>
+		</div>
+
+	</body>
+</html>
