@@ -1,198 +1,269 @@
-<!Doctype html>
+<!DOCTYPE HTML>
+<!--
+	Overflow by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="http://bootswatch.com/readable/bootstrap.min.css">
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-		<script>
-		      function initialize() {
-		      	var myLatlng = new google.maps.LatLng(12.9656055,77.599917);
-		        var map_canvas = document.getElementById('map_canvas');
-		        var map_options = {
-		          center: new google.maps.LatLng(12.9656055,77.599917
-),
-		          zoom: 15,
-		          mapTypeId: google.maps.MapTypeId.ROADMAP
-		        }
-		        var map = new google.maps.Map(map_canvas, map_options);
-
-				var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-				var marker = new google.maps.Marker({
-				  position: myLatlng,
-				  map: map,
-				  title: "Jaaga Penthouse"
-				});
-		      }
-		      google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
-	<script>
-	var c=document.getElementsByClass("schedule");
-	var ctx=c.getContext("2d");
-	ctx.beginPath();
-	ctx.moveTo(20,20);
-	ctx.lineTo(20,100);
-	ctx.lineTo(70,100);
-	ctx.stroke();
-	</script>
-	<style>
-	.wide {
-  width:100%;
-  margin-top:-22px;
-  height:450px;
-  background:url('https://lh5.googleusercontent.com/-N7-xQEviNLQ/U3YGlmO-wZI/AAAAAAAAZMM/Phf2DySzaKU/s569-no/10364372_728344387229316_1994523315_n.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -moz-box-shadow: inset 20px 10px 50px #fff; 
-  -webkit-box-shadow: inset 20px 10px 50px #fff; 
-  box-shadow: inset 70px 80px 500px black; 
-
- /* background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); 
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); 
-background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
-	}
-	.techrespect-nav{
-		background-color: #174c91;
-		border: 0px;
-	}
-	.techrespect-header{
-		font-size:2.8em;
-		/*color: #f05024; */
-		font-weight: bold;
-		color:white;
-		font-family: sans-serif;
-	}
-	.one-liner{
-		color:white;
-		padding-top:120px;
-		font-size:4.3em;
-		font-weight: bold;
-	}
-	.mooc-description{
-		color:white;
-		font-weight: bold;
-	}
-	.awards-section{
-		padding-bottom: 10px;
-		border-bottom: 3px solid #174c91;
-	}
-	.award-box{
-		padding: 0px 20px;
-	}
-	.award-box .thumbnail{
-		padding: 0px 10px;
-		border: 1px solid #f05024;
-	}
-	#map_canvas{
-		height: 300px;
-	}
-	.connector{
-		display: inline-block;
-		color: #f00;
-     background: black; 
-     margin-bottom: 110px;
-     width: 15%; 
-     height: 5px;
-     vertical-align: middle;
-	}
-	.dot{
-		display: inline-block;
-		position:relative;
-	}
-	div.glyphicon{
-    font-size: 3em;
-}
-.schedule{
-	padding:50px;
-}
-.schedule-section {
-padding-bottom: 0px;
-border-bottom: 3px solid #174c91;
-}
-	</style>
+		<title>RSPCT</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
-		
-		
 
-		<!-- Image section with text on top-->
-		<div class="wide text-center" >
-			<h1 class="one-liner ">RSPCT</h1>
-			<h3 class="mooc-description"> Talent Show and Cash Prizes for Emerging Techies in Bangalore December 6, 2014</h3>
-		</div>
-
-		<div class="col-md-12 awards-section row-fluid">
-			<h1 class="text-center">Awards</h1><br>	
-			<div class="col-md-12">
-				<div class="col-md-4 text-center award-box">
-					<div class="thumbnail">
-						<h2><a href=http://jaaga.in/mooc-awards/>MOOC Awards</a></h2>
-						<p>Prizes for people who have completed challenging Computer Science classes online.</p>
-					</div>
-				</div>
-				<div class="col-md-4 text-center award-box"> 
-					<div class="thumbnail">
-						<h2><a href=http://jaaga.in/code-competition-awards/>Code Competitions</a></h2>
-						<p>Prizes for people who rank highly on Code Challenges</p>
-					</div>
-				</div>
-				<div class="col-md-4 text-center award-box">
-					<div class="thumbnail">
-						<h2><a href=http://jaaga.in/open-source-awards/>Open Source Awards</a></h2>
-						<p>Prizes for people making meaningful Open Source Contributions</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		<div class="col-md-12 awards-section row-fluid">
-			<h1 class="text-center">Features</h1><br>	
-			<div class="col-md-12">
-				<div class="col-md-4 col-md-offset-2 text-center award-box">
-					<div class="thumbnail">
-						<h2>Startups</h2>
-						<p>Pitch what they are working on, and why they are great places to work</p>
-					</div>
-				</div>
-				<div class="col-md-4 text-center award-box"> 
-					<div class="thumbnail">
-						<h2>HCI Design Showcase</h2>
-						<p>Giving Designers a chance to show off</p>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>RSPCT</h1>
+					<p>Celebrating the Bangalore Tech Community</p>
 <!--
-		<div class="col-md-12 schedule-section row-fluid">
-		<h1 class="text-center"> Schedule</h1>
-			<div class="col-md-offset-3 col-md-6 schedule text-center">
-				<div class="glyphicon glyphicon-remove-circle dot"><br><h5 class="text-center">Doors Open<br>10am</h5></div>
-				<span class="connector"></span>
-				<div class="glyphicon glyphicon-remove-circle dot"><h5 class="text-center">Awards Ceremony Begins<br>
-				2pm</h5></div>
-				<span class="connector"></span>
-				<div class="glyphicon glyphicon-remove-circle dot"><h5 class="text-center">Music<br>
-				8pm</h5></div>
-			</div>
-		</div>
+					<p>MOOC Awards
+					<p>Code Competition Awards
+					<p>Open Source Awards
+					<p>Startup Hiring Plea
+					<p>HCI Showcase
+-->
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly scrolly-centered">Jan 10, 2015</a>
+				</footer>
+			</section>
+		
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>Brought to you by <a href=http://jaaga.in>JAAGA</a> and <a href=http://ispirt.in>iSPIRT</h2>
+				</header>
+				<p>
 
-		<div class="row-fluid col-md-12 map-section">
-			<div class="host col-md-4">
-<!--			<h1> Host</h1> -->
-			<a href=http://jaaga.in><img src="http://jaaga.in/wp-content/uploads/2013/09/jaaga_brandmark_website.jpg"></a>
-			<h4></h4> 
-			</div>
+Supporting creative learners and entrepreneurs</p>
+				
+				<ul>
+					<li>Through awards for: Completed Online CS Classes, Code Competitions & Open Source Contributions</li>
+					<li>Showcasing: Startups & HCI Design</li>
+				</ul>
 
-			<div class="col-md-8" id="map_canvas">
+				<footer>
+					<a href="#first" class="button style2 scrolly">More</a>
+				</footer>
+			</section>
+		
+		<!-- Feature 1 -->
+			<article id="first" class="container box style1 right">
+				<a href="#mooc" class="image fit"><img src="images/mooc.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2><a href="#mooc">MOOC Awards</a></h2>
+					</header>
+					<p>Prizes for people who have completed challenging Computer Science classes online</p>
+				</div>
+			</article>
+		
+		<!-- Feature 2 -->
+			<article class="container box style1 left">
+				<a href="#code" class="image fit"><img src="images/code.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2><a href="#code">Code Competitions</a></h2>
+					</header>
+					<p>Prizes for people who rank highly on Code Challenges</p>
+				</div>
+			</article>
 
+		<!-- Feature 3 -->
+			<article class="container box style1 right">
+				<a href="#open" class="image fit"><img src="images/open.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2><a href="#open">Open Source Awards</a></h2>
+					</header>
+					<p>Prizes for people making meaningful Open Source Contributions</p>
+				</div>
+			</article>
+
+			<!-- Feature 4 -->
+			<article class="container box style1 left">
+				<a href="#" class="image fit"><img src="images/startup.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2><a href="#startup">Startup Showcase</a></h2>
+					</header>
+					<p>Pitch what you are working on, and why you are great places to work at.</p>
+				</div>
+			</article>
+
+		<!-- Feature 5 -->
+			<article class="container box style1 right">
+				<a href="#" class="image fit"><img src="images/hci.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2><a href="https://docs.google.com/forms/d/1zPKQ5TH6UoMGq1nBd3-fk024Nysk5BRTZAxpQ0P4twA/viewform">HCI Design Showcase</a></h2>
+					</header>
+					<p>Giving Designers a chance to show off</p>
+				</div>
+			</article>
+		
+		<!-- Descriptions -->
+		
+			<article id="mooc" class="container box mooc">
+				<header>
+					<h2>MOOC Awards</h2>
+					<p>If you have completed a challenging online computer science class come receive a cash prize as part of the TechRespect event at the Jaaga Penthouse in Bangalore Jan 10, 2015. Lakhs in prizes money. average prize over 100 rs. Prize amounts differ with course difficulty.</p>
+				</header>
+				
+				<section>
+					<header>
+						<h3>Classes eligible for a prize</h3>
+					</header>
+					<ul class="default">
+						<li>Any MOOC from this <a href=https://www.class-central.com/subject/cs>list of Computer Science classes by Class-Central.com</a></li>
+						<li>Any complete track from <a href=codeacademy.com>CodeAcademy.com</a></li>
+						<li>Any completed track on <a href=http://codeschool.com>CodeSchool.com</a></li>
+						<li>Any completed track on <a href=http://teamtreehouse.com>TeamTreeHouse.com</a></li>
+						<li>Any Internet Programming or Web Development test on <a href=odesk.com>Odesk</a></li>
+					</ul>
+					<p>You must personally come to the RSPCT event on Jan 10, 2015. at <a href=http://jaaga.in/contact>Jaaga</a> to pick up your prize.</p>
+				</section>
+				
+				<section>
+					<header>
+					<a href="https://docs.google.com/forms/d/14Ly1F8GvdEUTGH-jVizDGdhg4JJGYSuxMHiwKHatTFs/viewform?usp=send_form" class="button style2 scrolly scrolly-centered">Apply</a>
+					</header>
+				</section>
+
+
+				<section>
+					<header>
+						<h3><a href="#">Top</a></h3>
+					</header>
+				</section>
+
+			</article>
+
+
+			<article id="code" class="container box code">
+				<header>
+					<h2>Code Competition Awards</h2>
+				</header>
+
+				<section>
+					<header>
+						<h3>Cash Prizes for ranked people on the following code challenge websites</h3>
+					</header>
+					<ul class="default">
+						<li><a href=http://hackerrank.com>HackerRank.com</a></li>
+						<li><a href=http://hackerearth.com>HackerEarth.com</a></li>
+						<li><a href=http://codechef.com>CodeChef.com</a></li>
+						<li><a href=http://codewars.com>CodeWars.com</a></li>
+						<li><a href=http:/codeeval.com>CodeEval.com</a></li>
+						<li><a href=http://codecombat.com>CodeCombat.com</a></li>
+						<li><a href=http://topcoder.com>TopCoder.com</a></li>
+					</ul>
+					<p>You must personally come to the RSPCT event on Jan 10, 2015. at Jaaga to pick up your prize.</p>
+				</section>
+				
+				
+				<section>
+					<header>
+					<a href="https://docs.google.com/forms/d/11iBei0TM7tJ6w_LWshQBl2bMlSbT2K7_QkrIPcYIkhg/viewform" class="button style2 scrolly scrolly-centered">Apply</a>
+					</header>
+				</section>
+
+				<section>
+					<header>
+						<h3><a href="#">Top</a></h3>
+					</header>
+				</section>
+
+			</article>
+
+			<article id="open" class="container box open">
+				<header>
+					<h2>Open Source Awards</h2>
+					<p>Celebrating Open Source Contributions with real cash prizes</p>
+				</header>
+
+				<section>
+					<header>
+						<h3>Prizes awarded for open source</h3>
+					</header>
+					<ul class="default">
+						<li>contributions to widely used repositories ie. Apache, Rails, Meteor…</li>
+						<li>projects that address a specific social impact in partnership with <a href="http://codeforindia.org">CodeForIndia.org</a></li>
+						<li>projects that demonstrate technical excellence</li>
+					</ul>
+					<p>You must personally come to the RSPCT event on Jan 10, 2015. at Jaaga to pick up your prize.</p>
+				</section>
+				
+				
+				<section>
+					<header>
+					<a href="https://docs.google.com/forms/d/1zWe7xjB-jzkbCwaKkQDm8FpYA1gYwzOWn0ZLrNF0yoM/viewform?usp=send_form" class="button style2 scrolly scrolly-centered">Apply</a>
+					</header>
+				</section>
+
+				<section>
+					<header>
+						<h3><a href="#">Top</a></h3>
+					</header>
+				</section>
+
+			</article>
+
+			<article id="startup" class="container box startup">
+				<header>
+					<h2>STARTUPS @ RSPCT</h2>
+				</header>
+
+				<section>
+					<p>We are looking for Bangalore based founders and senior developers interested in getting to know the next generation of software developers coming up in the Bangalore tech scene now. RSPCT is a quarterly event. We ask people to come to the events regularly (every 3 months) so you can get to know the individuals over time. We will be recognizing upcoming software developers by the public artifacts of good code they generate on the internet. These include certificates and badges from online computer science courses like CodeAcademy and EdX. We also recognize people’s rankings in online code competitions like HackerRank and CodeWars. Lastly we recognize open source contributions people make.</p>
+
+					<p>We invite you to speak briefly about your startup and why you would be good people to work with. More importantly we invite you to talk with young people at the event. Share your experience and suggestions with them. By establishing an ongoing connection with young developers it will be easier to recognize when it would be good to work together.</p>
+
+					<p>The future of the Bangalore tech scene is with the young people who are just learning to write software now. This is an opportunity for the more senior members of this scene to engage with them.</p>
+				</section>
+				
+				
+				<section>
+					<header>
+					<a href="https://docs.google.com/forms/d/1_PG0wEQvJL28WZMpGmponVAsoQpLqoRJ3Efi-jbkcws/viewform" class="button style2 scrolly scrolly-centered">Apply</a>
+					</header>
+				</section>
+
+				<section>
+					<header>
+						<h3><a href="#">Top</a></h3>
+					</header>
+				</section>
+
+			</article>
+		
+		
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="https://twitter.com/jaagarnaut" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.facebook.com/Jaaga.in" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			</ul>
+			<div class="copyright">
+brought to you by:<br>
+				<a href="http://jaaga.in"><img src="http://jaaga.in/wp-content/uploads/2013/09/jaaga_brandmark_website.jpg"></a><br>&<br>
+				<a href="http://ispirt.in"><img style="background-color:white" src="http://www.ispirt.in/Media/Stills/logo.png"></a><!--
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>-->
 			</div>
-		</div>
+		</section>
 
 	</body>
 </html>
